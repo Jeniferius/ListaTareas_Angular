@@ -1,0 +1,28 @@
+<div class="container mt-5 text-center">
+  <select class="mb-5" (change)="handleSelect($event)">
+    <option value="todo">Todos</option>
+    <option value="completa">Completa</option>
+    <option value="incompleta">Incompleta</option>
+  </select>
+
+  <!-- <ul>
+    <li class="mb-5" *ngFor="let tarea of tareas">
+      <div class="row">
+        <div class="col-1" [ngClass]="{'completa': tarea.completa, 'incompleta': !tarea.completa}"></div>
+        <p class="col-8 tarea">{{tarea.mensaje}}</p>
+        <button class="col-3 boton" (click)="completarTarea(tarea)">Completar</button>
+      </div>
+    </li>
+  </ul> -->
+
+  <ul>
+    <li class="mb-5" *ngFor="let tarea of arrFiltrado">
+      <div class="row">
+        <div class="col-1" [ngClass]="{'completa': tarea.completa, 'incompleta': !tarea.completa}"></div>
+        <p class="col-8 tarea">{{tarea.mensaje}}</p>
+        <button class="col-3 boton" (click)="completarTarea(tarea)">Completar</button>
+      </div>
+    </li>
+  </ul>
+
+</div>

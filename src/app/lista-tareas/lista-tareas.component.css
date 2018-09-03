@@ -1,0 +1,22 @@
+li{
+    list-style: none;
+    background-color: bisque;
+}
+
+.tarea{
+    margin-top: 10px;
+}
+
+.boton{
+    background-color: cornflowerblue;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.completa{
+    background-color: rgb(119, 255, 142);
+}
+
+.incompleta{
+    background-color: rgb(255, 88, 88);
+}
